@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>REGz EMU</title>
+  <script type="text/javascript">
+    window._arabica = {};
+  </script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/gmApi.js"></script>
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript">
+    var module = _arabica.fetchParamFromUrl("module");
+    _arabica.host =
+      GmApi.gmDevUrl() || module || "https://cloud.bluestacks.com";
+  </script>
+  <script type="text/javascript" src="localization/index.js"></script>
+  <script type="text/javascript" src="js/localize.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/login.js"></script> <!-- Add login.js script -->
+</head>
+
+<body>
+
+
+      <!-- Add overlay that covers the entire page when the login panel is active -->
+       <div id="overlay" style="display: none;"></div>
+
+	<video autoplay muted loop id="video-background" class="video-background">
+		<source src="Themes/a.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+  <div class="container library" id="content-container">
+<!-- The rest of your HTML content -->
+    <div class="flex header spaceBetween vrtlCenter">
+      <div class="flex spaceBetween grow">
+        <ul class="navBar flex">
+          <li class="margin-right-25">
+            <a aria-current="page" class="bold activeLink link library" href="javascript:void(0)"
+              data-str-id="library" onclick="handleTabClick('library')"></a>
+
+              
+          </li>
+          <li class="margin-right-25">
+			<a class="bold activeLink link theme" href="javascript:void(0)" data-str-id="theme" onclick="handleTabClick('theme')">Theme</a>
+		</li>
+        </ul>
+        <div class="flex flexEnd">
+          <div class="reload flex vrtlCenter pointer capitalize tooltip" onclick="refreshhomehtml()">
+            <img src='images/ReloadIcon.png' />
+            <span class="tooltiptext" data-str-id="reload"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="theme" class="tab" >
+    <div>
+        <h2></h2>
+		<div class="theme-selector">
+		<video id="theme-video" class="themebutton" src="Themes/a.mp4" alt="Theme 3" onclick="applyTheme('Themes/a.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/b.mp4" alt="Theme 3" onclick="applyTheme('Themes/b.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/c.mp4" alt="Theme 3" onclick="applyTheme('Themes/c.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/d.mp4" alt="Theme 3" onclick="applyTheme('Themes/d.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/e.mp4" alt="Theme 3" onclick="applyTheme('Themes/e.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/f.mp4" alt="Theme 3" onclick="applyTheme('Themes/f.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/g.mp4" alt="Theme 3" onclick="applyTheme('Themes/g.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/h.mp4" alt="Theme 3" onclick="applyTheme('Themes/h.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/i.mp4" alt="Theme 3" onclick="applyTheme('Themes/i.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/j.mp4" alt="Theme 3" onclick="applyTheme('Themes/j.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/k.mp4" alt="Theme 3" onclick="applyTheme('Themes/k.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/l.mp4" alt="Theme 3" onclick="applyTheme('Themes/l.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/m.mp4" alt="Theme 3" onclick="applyTheme('Themes/m.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/n.mp4" alt="Theme 3" onclick="applyTheme('Themes/n.mp4')"></video>
+            <video id="theme-video" class="themebutton" src="Themes/o.mp4" alt="Theme 3" onclick="applyTheme('Themes/o.mp4')"></video>
+            <video id="theme-video" class="themebutton" src="Themes/p.mp4" alt="Theme 3" onclick="applyTheme('Themes/p.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/q.mp4" alt="Theme 3" onclick="applyTheme('Themes/q.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/r.mp4" alt="Theme 3" onclick="applyTheme('Themes/r.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/s.mp4" alt="Theme 3" onclick="applyTheme('Themes/s.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/t.mp4" alt="Theme 3" onclick="applyTheme('Themes/t.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/u.mp4" alt="Theme 3" onclick="applyTheme('Themes/u.mp4')"></video>
+		<video id="theme-video" class="themebutton" src="Themes/v.mp4" alt="Theme 3" onclick="applyTheme('Themes/v.mp4')"></video>
+            <video id="theme-video" class="themebutton" src="Themes/w.mp4" alt="Theme 3" onclick="applyTheme('Themes/w.mp4')"></video>
+            <video id="theme-video" class="themebutton" src="Themes/x.mp4" alt="Theme 3" onclick="applyTheme('Themes/x.mp4')"></video>
+            <video id="theme-video" class="themebutton" src="Themes/y.mp4" alt="Theme 3" onclick="applyTheme('Themes/y.mp4')"></video>
+            <video id="theme-video" class="themebutton" src="Themes/z.mp4" alt="Theme 3" onclick="applyTheme('Themes/z.mp4')"></video>
+           
+		
+	</div>
+    </div>
+	</div>
+    <div class="contentSection">
+      <div id="library" class="tab">
+        <div>
+          <div class="flex spaceBetween margin-bottom-20 stickyScrollHeader title">
+            <div class="flex vrtlCenter">
+              <p class="heading sectionHeading" data-str-id="allInstalled"></p>
+              <span class="flex column pointer menuOptions" onclick="showMenuOptions();"><span class="dot"></span><span
+                  class="dot"></span><span class="dot"></span>
+                <div class="menuOptionsContainer">
+                  <div class="transparentBg" onclick="hideMenuOptions(event);"></div>
+                  <ul class="optionsList font12">
+                    <li data-str-id="installApk" onclick="installApk(event);"></li>
+                    <li data-str-id="deleteApps" onclick="deleteApps(event);"></li>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="flex wrap gameListContainer">
+            <ul class="flex gameList wrap" id="installedApps">
+              <li class="pointer" style="width: 100px;" onclick="handleClick('playStore')">
+                <div class="installedGame">
+                  <img src="./images/googlePlayStore.png" alt="gameImage" />
+                </div>
+                <p class="bold ellipsis gameName">REGz Store</p>
+              </li>
+            </ul>
+            <ul class="flex gameList wrap bsApps">
+              <li class="pointer" style="width: 100px;" onClick="openSystemApps();">
+                <div class="installedGame appSleeveContainer gameCenterBg">
+                  <div class="flex wrap vrtlCenter appSleeveCollector">
+                    <img src="./images/camera.png" class="slideIcon" /><img src="./images/settings.png"
+                      class="slideIcon" /><img src="./images/media.png" class="slideIcon" /><img
+                      src="./images/chrome.png" class="slideIcon" />
+                  </div>
+                </div>
+                <p class="bold ellipsis gameName" data-str-id="systemApps"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="noInternet" class="tab flex perfectCenter" class="tab">
+        <p class="offlineText" data-str-id="noInternet"></p>
+      </div>
+    </div>
+    <div class="modalContainer">
+      <div class="transparentBg" onclick="hideSystemApps();"></div>
+      <div class="folderPopup gameCenterBg">
+        <div class="flex spaceBetween modalHeading vrtlCenter">
+          <p class="ellipsis" data-str-id="systemApps"></p>
+          <img src="./images/closeIcon.png" class="folderCloseIcon pointer" alt="closeIcon"
+            onclick="hideSystemApps();" />
+        </div>
+        <div class="folderAppsContainer">
+          <div>
+            <ul class="flex gameList wrap">
+              <li class="pointer" onclick="handleClick('android')">
+                <div class="imageContainer">
+                  <img src="./images/settings.png" alt="bsApp" />
+                </div>
+                <p class="bold ellipsis gameName">Android Settings</p>
+              </li>
+              <li class="pointer" onclick="handleClick('media')">
+                <div class="imageContainer ">
+                  <img src="./images/media.png" alt="bsApp" />
+                </div>
+                <p class="bold ellipsis gameName">Media Manager</p>
+              </li>
+              <li class="pointer" onclick="handleClick('chrome')">
+                <div class="imageContainer ">
+                  <img src="./images/chrome.png" alt="bsApp" />
+                </div>
+                <p class="bold ellipsis gameName">Browser</p>
+              </li>
+              <li class="pointer" onclick="handleClick('camera')">
+                <div class="imageContainer ">
+                  <img src="./images/camera.png" alt="bsApp" />
+                </div>
+                <p class="bold ellipsis gameName">Camera</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deleteOverlay" onclick="hideDeleteButton();"></div>
+    <div class="uninstallPopup">
+      <div class="flex spaceBetween modalHeading">
+        <p class="deleteText bold">Delete app</p>
+        <img src="./images/closeIcon_uninstall.png" class="closeIcon pointer" alt="closeIcon" onclick="hideDeleteButton();" />
+      </div>
+      <p class="deleteText modalHeading" data-str-id="areYouSure"></p>
+      <div class="flex flexEnd">
+        <button class="whiteButton" onclick="hideDeleteButton();">
+          <p data-str-id="cancel"></p>
+        </button><button class="warningButton" onclick="uninstallGame();">
+          <p data-str-id="delete"></p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- Login panel -->
+    <div id="login-panel" style="display: none;">
+        <div class="login-container">
+            <h2 class="rgb-glow">REGz EMU 😈</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p id="error-message" class="error"></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
